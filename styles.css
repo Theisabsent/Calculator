@@ -34,22 +34,17 @@ h1 {
     max-width: 90%; /* Make calculator responsive */
 }
 
+footer {
+    background-color: #0f0f0f; /* Match the calculator background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 30px; /* Increase padding for more space */
+    font-size: 18px; /* Increase font size */
+    margin-top: 20px; /* Add margin above the footer */
+}
 
 h1:hover {
     transform: scale(1.2); /* Increase size on hover */
-
-}
-
-
-
-
-.calculator {
-    width: 350px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
 }
 
 #display {
