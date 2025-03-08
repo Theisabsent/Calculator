@@ -4,6 +4,45 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+h1 {
+    text-align: center; /* Center the header text */
+    color: #ffffff; /* Text color */
+    font-size: 35px; /* Set font size for the header */
+    margin-bottom: 20px; /* Add margin below the header */
+    transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Further adjust font size for mobile devices */
+    }
+}
+
+.calculator {
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    max-width: 90%; /* Make calculator responsive */
+}
+
+
+h1:hover {
+    transform: scale(1.2); /* Increase size on hover */
+
+}
+
+
+
+
 .calculator {
     width: 350px;
     margin: 100px auto;
